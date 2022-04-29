@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GeometryLibrary
+namespace GeometryLibrary.Interfaces
 {
     /// <summary>
     /// Интерфейс для закрытых пространств

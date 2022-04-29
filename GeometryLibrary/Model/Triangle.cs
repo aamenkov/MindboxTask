@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using GeometryLibrary.Interfaces;
 
 namespace GeometryLibrary.Model
 {
@@ -21,7 +22,7 @@ namespace GeometryLibrary.Model
             {
                 throw new ArgumentException("Сторона треугольника не может быть меньше или равна 0");
             }
-            if (firstSide + secondSide < thirdSide || secondSide + thirdSide < firstSide || firstSide + thirdSide < secondSide)
+            if (firstSide + secondSide <= thirdSide || secondSide + thirdSide <= firstSide || firstSide + thirdSide <= secondSide)
             {
                 throw new ArgumentException("Фигура не может являться треугольником");
             }
